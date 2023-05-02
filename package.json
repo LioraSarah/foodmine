@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cd src && nodemon server.ts",
-    "build": "npm install && tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cd built && node server.js",
+    "prebuild": "npm run build",
+    "build": "cd frontend && npm run build"
   },
   "keywords": [],
   "author": "",
